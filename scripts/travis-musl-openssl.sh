@@ -8,6 +8,9 @@ case "$TARGET" in
     i686-*)
         OPTIONS=(linux-generic32 -m32 -Wl,-melf_i386)
         ;;
+    aarch64-*)
+        OPTIONS=(linux-aarch64)
+        ;;
 esac
 
 rustup target add "$TARGET"
