@@ -4,6 +4,8 @@ matrix:
   include:
     # OS compat
     - os: linux
+    - os: linux
+      arch: arm64
     # As of this writing, stable Rust (1.44.0) and the OS X version on TravisCI
     # do not work well together.
     - os: osx
